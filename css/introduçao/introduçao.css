@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container-introducao {
+  display: flex;
+  gap: 20px;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0px 40px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.introducao {
+  max-width: 50%;
+  text-align: left;
+  z-index: 99;
+}
+
+.introducao img {
+  margin-bottom: 20px;
+}
+
+.introducao h1 {
+  margin-bottom: 20px;
+  color: var(--p4); 
+  white-space: nowrap;
+}
+
+.introducao div {
+  display: grid;
+}
+
+.introducao div a {
+  margin-top: 40px;
+}
+
+.introducao div iframe {
+  margin-top: 40px;
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.introducao div img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-self: center;
+}
+
+.porcentagem {
+  text-align: center;
+}
+
+.imagem-absoluta {
+  max-width: 50%;
+}
+
+.imagem-absoluta img {
+  height: auto;
+  margin-top: 120px;
+}
+
+@media (max-width: 1400px){
+  .container-introducao{
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1000px){
+  .container-introducao{
+    padding: 10px;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .imagem-absoluta{
+     display: none;
+  }
+
+  .introducao{
+    max-width: 100%;
+    text-align: center;
+    display: grid;
+  }
+  .introducao div{
+    max-width: 100%;
+  }
+  .introducao div iframe{
+    width: 100%;
+    height: 400px;
+  }
+  .logo{
+    display: none;
+  }
+  .barra-porcentagem{
+    width: 500px;
+  }
+  .porcentagem{
+    font-size: 1rem;
+  }
+  .imagem-absoluta{
+    display: none;
+  }
+  .introducao h1 {
+    white-space: wrap;
+    text-align: center;
+  }
+  br {
+    display: none;
+  }
+   .introducao h1 span{
+    font: 400 2rem "DM Serif Display", serif;
+    text-align: center;
+    display: block; /* Isso faz o span ficar em uma linha separada */
+    margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 600px){
+  .introducao div iframe{
+    width: 100%;
+    height: 300px;
+  }
+  .barra-porcentagem{
+    width: 400px;
+  }
+  .introducao h1 {
+    white-space: wrap;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .introducao h1 span{
+    margin-top: 0px;
+    }
+}
+@media (max-width: 500px){
+  .introducao div iframe{
+    width: 100%;
+    height: 200px;
+    margin-bottom: -20px;
+  }
+    .botao-1 {
+      font: 400 1.5rem "DM Serif Display", serif;
+  }
+  .barra-porcentagem {
+    width: 300px;
+  }
+}

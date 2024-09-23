@@ -1,0 +1,219 @@
+.conteiner-quinta-parte{
+  background-color: var(--c6);
+  position: relative;
+  padding:  80px 0px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.detalhe-cima-preços{
+  position: absolute;
+  top: -40px;
+
+}
+.detalhe-baixo-preços{
+  position: absolute;
+  transform: rotate(180deg);
+  bottom: -40px;
+}
+.preços{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 40px;
+}
+.preços p{
+  color: var(--c4);
+  font: 700 1rem "Roboto", sans-serif;
+}
+.preços img{
+  width: 20px;
+}
+.preço-1{
+  background-color: var(--c1);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(239, 0, 0, 100%);
+  padding: 60px 20px;
+  position: relative;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: relative;
+}
+
+.preço-1:hover{
+  transform: scale(1.1);
+}
+
+.oferta-premium-bg{
+  background-color: var(--p4);
+  padding: 10px 50px;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: -60px;
+  max-width: 300px;
+ margin-bottom: 20px;
+}
+.oferta-premium{
+  color: var(--c1);
+  white-space: nowrap;
+  font: 500 1rem "Roboto", sans-serif;
+}
+
+
+.bonus{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 40px;
+  gap: 20px;
+  align-items: center;
+}
+
+.preço-2{
+  background-color: var(--c1);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(179, 179, 179, 100%);
+  padding: 60px 20px;
+  position: relative;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.preço-2:hover{
+  transform: scale(1.03);
+}
+
+.oferta-basica-bg{
+  background-color: var(--c3);
+  padding: 10px 50px;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: -60px;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+.oferta-basica{
+  color: var(--c2);
+  white-space: nowrap;
+  font: 500 1rem "Roboto", sans-serif;
+}
+.preço-numero-1 {
+  text-align: center;
+  margin-top: 40px;
+}
+.preço-numero-1 h1{
+  color: var(--p4);
+  font: 700 4rem "Roboto", sans-serif;
+  position: relative;
+}
+.preço-numero-1 h1::before {
+  content: "12x de:";
+  position: absolute;
+  color: var(--c3);
+  top: 0px;
+  left:  10px;
+  font-size: 1rem;
+  z-index: 100;
+}
+.preço-numero-1 p{
+  margin-bottom: 20px;
+}
+
+
+
+
+.preço-numero-2 {
+  text-align: center;
+  margin-top: 40px;
+}
+.preço-numero-2 h1{
+  color: var(--p3);
+  font: 700 4rem "Roboto", sans-serif;
+  position: relative;
+}
+.preço-numero-2 h1::before{
+  content: "12x de:";
+  position: absolute;
+  color: var(--c3);
+  top: 0px;
+  left:  30px;
+  font-size: 1rem;
+  z-index: 100;
+}
+.preço-numero-2 p{
+  margin-bottom: 20px;
+}
+
+@media(max-width: 1000px){
+  .preços{
+    gap: 40px;
+    padding: 40px;
+  }
+}
+@media(max-width: 800px){
+  .preços{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px;
+  }
+  .preço-numero-2 h1{
+    font-size: 3rem;
+  }
+
+  .preço-numero-2 h1::before{
+    right: 260px;
+  }
+  .bonus p{
+    font-size: 0.9rem;
+  }
+  .preço-numero-1 h1{
+    font-size: 3rem;
+  }
+
+  .preço-numero-1 h1::before{
+    right: 260px;
+  }
+  .bonus{
+    padding: 10px 0px;
+    gap: 10px;
+  }
+  .botao-2{
+    font-size: 1.5rem;
+  }
+  .botao-3{
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width: 400px){
+  .botao-2{
+    font-size: 1.1rem;
+  }
+  .botao-3{
+    font-size: 1.1rem;
+  }
+  .preço-numero-2 h1::before{
+    left: 0px;
+  }
+  .preço-numero-1 h1::before{
+    left: 0px;
+  }
+  .oferta-premium-bg {
+    margin-top: -20px;
+  }
+  .preço-1 {
+    padding: 20px;
+  }
+  .preço-2 {
+    padding: 20px;
+  }
+  .oferta-basica-bg {
+    margin-top: -20px;
+  }
+
+  .conteiner-quinta-parte{
+    padding:  40px 0px;
+  }
+}
+

@@ -1,0 +1,62 @@
+.botao-1 { 
+  display: block;
+  background: linear-gradient(90deg, #890000, #EF0000);
+  color: var(--c1);
+  font: 400 2rem "DM Serif Display", serif;
+  text-decoration: none;
+  padding: 10px 36px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.botao-1:hover {
+  transform: scale(1.03);
+}
+.botao-2 { 
+  display: block;
+  background: var(--p4);
+  color: var(--c1);
+  font: 400 2rem "DM Serif Display", serif;
+  text-decoration: none;
+  padding: 10px 36px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); /* Corrigido para 0.25 para um valor entre 0 e 1 */
+  transition: transform 0.3s ease;
+  width: 100%;
+  text-align: center;
+  animation: botao-2 1s infinite; /* Corrigido para o nome da animação */
+}
+
+@keyframes botao-2 {
+  0%, 100% {
+      transform: scale(1); /* Tamanho original */
+  }
+  50% {
+      transform: scale(1.05); /* Aumenta 10% */
+  }
+}
+.botao-2:hover {
+  transform: scale(1.03);
+}
+
+.botao-3 { 
+  display: block;
+  background: var(--p3);
+  color: var(--c1);
+  font: 400 2rem "DM Serif Display", serif;
+  text-decoration: none;
+  padding: 10px 36px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
+  transition: transform 0.3s ease;
+  width: 100%;
+  text-align: center;
+  color: var(--c1);
+}
+
+.botao-3:hover {
+  transform: scale(1.03);
+}

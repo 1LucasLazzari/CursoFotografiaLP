@@ -1,0 +1,36 @@
+.font-64{
+  font: 400 4rem "DM Serif Display", serif;
+  line-height: 45px;
+  
+}
+.font-64 span{
+  font: 400 3rem "DM Serif Display", serif;
+}
+.font-48{
+  font: 400 3rem "DM Serif Display", serif;
+}
+.font-40{
+  font: 400 2.5rem "DM Serif Display", serif;
+}
+
+.font-24{
+  font: 400 1.5rem "Roboto", sans-serif;
+}
+.font-24 span{
+  font: 700 1.5rem "Roboto", sans-serif;
+}
+.font-20{
+  font: 400 1.25rem "Roboto", sans-serif;
+}
+.font-18{
+  font: 400 1.125rem "Roboto", sans-serif;
+}
+.font-12{
+  font: 400 0.75rem "Roboto", sans-serif;
+}
+.font-16{
+  font: 400 1rem "Roboto", sans-serif;
+}
+.font-16-bold{
+  font: 700 1rem "Roboto", sans-serif;
+}

@@ -1,0 +1,81 @@
+.conteiner-sexta-parte {
+  padding-top: 60px;
+  max-width: 1600px;
+  margin: 0px auto;
+  position: relative;
+}
+.conteiner-sexta-parte h1{
+  text-align: center;
+}
+
+
+.faq-container {
+  padding: 40px;
+  border-radius: 5px;
+}
+
+/* Estilos para cada item de FAQ (pergunta + resposta) */
+.faq-item {
+  margin-bottom: 20px;
+  border: 2px solid #000; /* Borda única ao redor do item inteiro */
+  border-radius: 4px; /* Bordas arredondadas */
+  overflow: hidden; /* Garantir que o conteúdo não ultrapasse a borda */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Efeito suave */
+  opacity: 0; /* Inicialmente invisível */
+  transform: translateY(30px); /* Deslocado para baixo */
+}
+
+.faq-item.visible {
+  opacity: 1; /* Torna visível */
+  transform: translateY(0); /* Retorna à posição original */
+}
+
+
+/* Estilos da pergunta */
+.faq-question {
+  background-color: var(--c1);
+  color: var(--c6);
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos da resposta */
+.faq-answer {
+  display: none; 
+  color: var(--c5);
+  padding: 0px 20px;
+  padding-bottom: 20px;
+}
+
+
+.faq-icon {
+  font-size: 16px;
+  transition: transform 0.3s ease; /* Animação para a rotação */
+}
+
+/* Quando o item está aberto (invertendo a flecha) */
+.faq-item.open .faq-icon {
+  transform: rotate(180deg); /* Inverter a flecha */
+}
+
+
+
+@media (max-width: 1200px) {
+  .conteiner-sexta-parte h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width:700px){
+  .font-20{
+    font-size: 1rem;
+  }
+  .font-16-bold{
+    font-size: 0.75rem;
+  }
+}
+
